@@ -1,0 +1,115 @@
+body {
+    background-image: url(../imagenes/cafe4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body::-webkit-scrollbar{
+    width: 7px;
+    background-color: #330F0A;
+}
+body::-webkit-scrollbar-thumb{
+    height: 7px;
+    background-color: #F2DAC4;
+    border-radius: 5px;
+}
+
+.navbar {
+    display: flex;
+    background-color: #330F0A;
+    width: 100%;
+    height: 70px;
+    border-radius: 20px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 4px 4px 20px rgb(0, 0, 0) ;
+}
+.resenas, .menu, .promos {
+    color: #F2DAC4;
+    font-family: fuente1;
+    font-size: larger;
+    margin-right: -50px;
+    text-decoration: none;
+    transition: transform .2s;
+}
+
+.resenas:hover, .menu:hover, .promos:hover ,.logo:hover{
+    transform: scale(1.1);
+}
+
+.cuerpomayor{
+    width: 100%;
+    height: 550px;
+}
+
+.cuerpo {
+    display: flex;
+    width: 100%;
+    height: 520px;
+    background-color: rgb(255, 255, 255, 0.8);
+    margin-top: 1%;
+    border-radius: 20px;
+    box-shadow: 4px 4px 20px rgb(0, 0, 0) ;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+
+.mitad1 {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    margin: 2%;
+    flex-direction: column;
+    align-self: center;
+}
+
+.imagencafe {
+    display: flex;
+    height: 100%;
+    align-self: center;
+    border-radius: 0px 20px 20px 0px;
+    overflow: hidden; 
+}
+
+.imagencafe img {
+    width: 100%; 
+    height: auto; 
+}
+
+.logo {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-right: 300px;
+    transition: transform .2s;
+}
+.info{
+    display: flex;
+    height: 40px;
+    width: 210px;
+    position: absolute;
+    margin-top: 450px;
+    font-family: fuente1;
+}
+.texto{
+    font-family: fuente1;
+    font-size: large;
+    display: flex;
+    height: 60%;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.ubicacion{
+    display: flex;
+    height: 40px;
+    width: 40px;
+}
+@font-face{
+    font-family: fuente1;
+    src: url(../fuente/Dosis-VariableFont_wght.ttf);
+}
